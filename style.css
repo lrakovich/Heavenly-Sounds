@@ -1,0 +1,382 @@
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+   overflow: hidden;
+  background: #fff;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+canvas {
+  display: block;
+  
+  
+}
+
+
+
+
+
+
+
+
+h1 {font-family: krete, serif;
+
+font-weight: 400;
+
+font-style: italic;
+  font-size: 24px;
+}
+
+
+.icons {position: absolute;
+top: 20px;
+right: 35px;
+font-size: 75px;
+  font-family: 'IBM Plex Mono', monospace;
+font-weight: 500;
+color: #000;
+}
+
+.icons a {text-decoration: none;
+color: #000;}
+
+
+
+.icons-white {position: absolute;
+top: 20px;
+right: 35px;
+font-size: 75px;
+  font-family: 'IBM Plex Mono', monospace;
+font-weight: 500;
+color: #fff;
+}
+
+.icons-white a {text-decoration: none;
+color: #fff;}
+
+
+
+#info {font-size: 75px;
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  right: 180px;
+  background-color: #000;
+  width: 20%;
+
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: none;
+  
+  
+  
+}
+
+#info a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 700;
+  
+}
+
+#sound-icon {font-size: 50px;}
+
+
+
+#backgroundIFrame {cursor: crosshair;}
+
+
+
+
+iframe {
+
+            width: 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            overflow:hidden;
+
+            border:none;
+  
+  cursor: crosshair;
+  
+        }
+
+
+
+#message-container {
+  position: absolute;
+
+            width: 400px;
+
+            height: 100%;
+
+            left: 50px;
+
+            top: 30px;
+  
+            
+  
+  
+}
+
+
+
+
+        .message-white {
+
+            
+          color: #fff;
+          font-size: 18px;
+          font-family: 'IBM Plex Mono', monospace;
+          font-weight: 400;
+          
+
+        }
+
+.messagelink-white {text-decoration: none;
+color: #fff;
+font-weight:600;}
+
+
+
+.message-black {
+
+            
+color: #000;
+          font-size: 18px;
+          font-family: 'IBM Plex Mono', monospace;
+          font-weight: 400;
+          
+
+        }
+
+.messagelink-black {text-decoration: none;
+color: #000;
+font-weight:600;}
+
+
+
+
+
+
+
+
+
+.slider {
+
+  width: 600px;
+  margin: 13px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  cursor: none;
+}
+.slider:focus {
+  outline: none;
+  cursor: none;
+}
+.slider::-webkit-slider-runnable-track {
+  background: #000000;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider::-webkit-slider-thumb {
+  margin-top: -13px;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  -webkit-appearance: none;
+  cursor: none;
+}
+.slider:focus::-webkit-slider-runnable-track {
+  background: #0d0d0d;
+  cursor: none;
+}
+.slider::-moz-range-track {
+  background: #000000;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  cursor: none;
+}
+.slider::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 14px 0;
+  color: transparent;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider::-ms-fill-lower {
+  background: #000000;
+  border: 0;
+  cursor: none;
+}
+.slider::-ms-fill-upper {
+  background: #000000;
+  border: 0;
+  cursor: none;
+}
+.slider::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  margin-top: 0px;
+  cursor: none;
+  /*Needed to keep the Edge thumb centred*/
+}
+.slider:focus::-ms-fill-lower {
+  background: #000000;
+  cursor: none;
+}
+.slider:focus::-ms-fill-upper {
+  background: #0d0d0d;
+  cursor: none;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  .slider {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+
+
+
+.slider-white {
+
+  width: 600px;
+  margin: 13px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+.slider-white:focus {
+  outline: none;
+}
+.slider-white::-webkit-slider-runnable-track {
+  background: #fff;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider-white::-webkit-slider-thumb {
+  margin-top: -13px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 50px;
+  cursor: none;
+  -webkit-appearance: none;
+}
+.slider-white:focus::-webkit-slider-runnable-track {
+  background: #fff;
+}
+.slider-white::-moz-range-track {
+  background: #fff;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider-white::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 50px;
+  cursor: none;
+}
+.slider-white::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 14px 0;
+  color: transparent;
+  width: 100%;
+  height: 4px;
+  cursor: none;
+}
+.slider-white::-ms-fill-lower {
+  background: #fff;
+  border: 0;
+}
+.slider-white::-ms-fill-upper {
+  background: #fff;
+  border: 0;
+}
+.slider-white::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 50px;
+  cursor: none;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+.slider-white:focus::-ms-fill-lower {
+  background: #fff;
+}
+.slider-white:focus::-ms-fill-upper {
+  background: #fff;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  .slider {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+
+
+
+
+
+
+
+
