@@ -254,8 +254,8 @@ function playSound(soundindex){
 function changeBackgroundtoBlack() {
   var backgroundIFrame = document.getElementById("backgroundIFrame");
   
-  if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
-        backgroundIFrame.src = "https://editor.p5js.org/lrakovich/present/Y82_1sksD";
+  if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
+        backgroundIFrame.src = "https://lrakovich.github.io/Space/";
         slider.addClass ('slider-white');
     
     question.className = 'icons-white';
