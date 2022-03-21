@@ -67,7 +67,7 @@ var messages = document.getElementById("message");
 //saturn
     if ((slider.value()>10) && (slider.value()<15)) {
       saturn.loop(); 
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
         
         if (messagesaturn==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(1)'>" + "Saturn Radio Emissions" + "</a></br>Recorded by Cassini spacecraft.</br>April 2002.</br>374 million kilometers from Earth.</div></br>";           
@@ -82,7 +82,7 @@ var messages = document.getElementById("message");
     } 
   else if ((slider.value()>25) && (slider.value()<30)) {
       jupiter.loop();
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
        
         if (messagejupiter==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(2)'>" + "Jupiter's Magnetic Field" + "</a></br>Recorded by Juno spacecraft.</br>June 2016.</br>582 million kilometers from Earth.</div></br>";           
@@ -98,7 +98,7 @@ var messages = document.getElementById("message");
 //tempel
     else if ((slider.value()>40) && (slider.value()<45)) {
       tempel.loop();
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){
         if (messagetempel==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(3)'>" + "Tempel 1 Comet Dust" + "</a></br>Recorded by Stardust spacecraft.</br>February 2011.</br>181 kilometers from earth.</div></br>";           
           messagetempel=true;
@@ -110,7 +110,7 @@ var messages = document.getElementById("message");
 //plasma
     else if ((slider.value()>55) && (slider.value()<60)) {
       plasma.loop();
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
           if (messageplasma==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(4)'>" + "Interstellar Plasma" + "</a></br>Recorded by Voyager 1.</br>April 2013.</br>19 billion kilometers from Earth.</div></br>";           
           messageplasma=true;
@@ -122,7 +122,7 @@ var messages = document.getElementById("message");
 //light waves
     else if ((slider.value()>70) && (slider.value()<75)) {
       light.loop();
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
         if (messagelight==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(5)'>" + "Star KIC12268220C Light Curve Waves" + "</a></br>Recorded by Kepler Space Telescope.</br>December 2014.</br>1470 light-years from Earth.</div></br>";           
           messagelight=true;
@@ -134,7 +134,7 @@ var messages = document.getElementById("message");
 //langmuir  
     else if ((slider.value()>85) && (slider.value()<90)) {
       langmuir.loop();
-      if (backgroundIFrame.src != "https://editor.p5js.org/lrakovich/present/Y82_1sksD"){ 
+      if (backgroundIFrame.src != "https://lrakovich.github.io/Space/"){ 
         if (messagelangmuir==false) {
         messages.innerHTML = messages.innerHTML + "<div class='message-white'><a  class='messagelink-white' href='javascript:playSound(6)'>" + "Solar Langmuir Waves" + "</a></br>Recorded by Parker Solar Probe.</br>August  2019.</br>148 million kilometers from Earth.</div></br>";           
           messagelangmuir=true;
@@ -151,7 +151,7 @@ var messages = document.getElementById("message");
       plasma.stop();
       light.stop();
       langmuir.stop();
-      backgroundIFrame.src ="https://editor.p5js.org/lrakovich/present/cYsYnM_9S";
+      backgroundIFrame.src ="https://lrakovich.github.io/Cross-Cursor/";
       slider.removeClass ('slider-white');
       
       var x = document.getElementsByClassName("messagelink-white");
